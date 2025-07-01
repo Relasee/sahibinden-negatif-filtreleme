@@ -22,7 +22,7 @@ Uzantı, Sahibinden.com'un otomobil ilan sayfalarına (veya genel arama sonuçla
 
 Bu uzantıyı Chrome tarayıcınıza yüklemek için aşağıdaki adımları izleyin:
 
-1. Bu projenin tüm dosyalarını ( manifest.json, popup.html, popup.js, content.js ve icons klasörü) bilgisayarınızda tek bir klasöre indirin veya kopyalayın. background.js dosyasını kullanmayın/silin.  
+1. Bu projenin tüm dosyalarını ( manifest.json, popup.html, popup.js, content.js ve icons klasörü) bilgisayarınızda tek bir klasöre indirin veya kopyalayın.  
 2. Chrome tarayıcınızı açın ve adres çubuğuna chrome://extensions yazarak Uzantılar sayfasına gidin.  
 3. Sağ üst köşedeki "Geliştirici modu" (Developer mode) anahtarını açın.  
 4. Sol üstte beliren "Paketlenmemiş uzantıyı yükle" (Load unpacked) düğmesine tıklayın.  
@@ -38,11 +38,6 @@ Bu uzantıyı Chrome tarayıcınıza yüklemek için aşağıdaki adımları izl
 5. Tüm anahtar kelimeleri temizlemek için "Tümünü Temizle" düğmesini kullanın.  
 6. Sahibinden.com'daki otomobil ilan sayfalarına gidin. Eklediğiniz negatif anahtar kelimeleri içeren ilanlar otomatik olarak gizlenecektir.
 
-## **Potansiyel Sorunlar ve Notlar**
-
-* **HTML Yapısı Değişiklikleri:** Sahibinden.com'un web sitesi yapısı zaman zaman güncellenebilir. Eğer site, ilanların HTML yapısını (CSS sınıfları, element hiyerarşisi vb.) değiştirirse, uzantı ilanları doğru şekilde bulamayabilir ve filtreleme çalışmayabilir. Böyle bir durumda, content.js dosyasındaki CSS seçicilerinin (tbody.searchResultsRowClass, .classifiedTitle, .description vb.) güncellenmesi gerekebilir.  
-* **"Titreşim" Etkisi:** Uzantı, ilanları sayfa yüklendikten sonra gizlediği için, ilanlar kısa bir süreliğine görünüp ardından kaybolabilir. Bu, Manifest V3'ün getirdiği güvenlik kısıtlamaları nedeniyle mevcut en iyi yaklaşımdır.  
-* **Hata Ayıklama:** Eğer uzantı çalışmazsa, Chrome Geliştirici Araçları'nı (F12) kullanarak Sahibinden.com sayfasının "Console" (Konsol) sekmesini kontrol edin. content.js'ten gelen hata mesajları veya uyarılar (örneğin "İlan kapsayıcısı bulunamadı") sorunun kaynağını anlamanıza yardımcı olabilir.
 
 ## **Katkıda Bulunma**
 
