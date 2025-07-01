@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Sahibinden Negatif Filtre",
+  "version": "1.3",
+  "description": "Kullanıcı tanımlı negatif terimlere göre Sahibinden.com otomobil ilanlarından belirli anahtar kelimeleri hariç tutar (Gelişmiş DOM Tabanlı).",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.sahibinden.com/*",
+    "https://sahibinden.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.sahibinden.com/otomobil*",
+        "https://sahibinden.com/otomobil*",
+        "https://www.sahibinden.com/arama/*",
+        "https://sahibinden.com/arama/*",
+        "https://www.sahibinden.com/kategori/otomobil*",
+        "https://sahibinden.com/kategori/otomobil*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["https://www.sahibinden.com/*", "https://sahibinden.com/*"]
+    }
+  ]
+}
