@@ -4,7 +4,7 @@ Bu tarayıcı uzantısı, Sahibinden.com'daki otomobil ilanlarını, belirlediğ
 
 ## **Özellikler**
 
-* **Negatif Anahtar Kelime Filtreleme:** İlan başlıklarında veya açıklamalarında belirlediğiniz kelimeleri içeren ilanları gizler.  
+* **Negatif Anahtar Kelime Filtreleme:** İlan başlıklarında veya açıklamalarında belirlediğiniz kelimeleri içeren ilanları gizler. Bu özellik, sadece genel terimler için değil, aynı zamanda belirli marka, model isimleri veya diğer kategoriye özel kelimeler için de negatif filtreleme yapmanızı sağlar.
 * **Dinamik İçerik Desteği:** Sahibinden.com'un dinamik olarak yüklenen içeriklerini (örneğin, aşağı kaydırdıkça gelen yeni ilanlar) MutationObserver kullanarak algılar ve filtrelemeyi uygular.  
 * **Kolay Yönetim:** Tarayıcı araç çubuğundaki uzantı simgesine tıklayarak açılan popup penceresi üzerinden negatif anahtar kelimelerinizi kolayca ekleyebilir, kaldırabilir ve yönetebilirsiniz.  
 * **Kalıcı Depolama:** Eklediğiniz anahtar kelimeler tarayıcınızın yerel depolama alanında saklanır, böylece tarayıcıyı kapatsanız bile ayarlarınız korunur.
